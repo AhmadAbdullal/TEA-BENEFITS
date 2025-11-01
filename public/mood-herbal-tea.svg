@@ -1,0 +1,11 @@
+<svg width="512" height="640" viewBox="0 0 512 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="40" y="40" width="432" height="560" rx="36" fill="#FFFFFF" stroke="#DADFE5" stroke-width="4" />
+  <rect x="92" y="124" width="328" height="392" rx="32" fill="#6F2A5D" />
+  <rect x="92" y="124" width="328" height="132" rx="32" fill="#FFFFFF" opacity="0.08" />
+  <text x="256" y="240" text-anchor="middle" font-family="'Playfair Display', serif" font-size="48" fill="#C7A56C" font-weight="700">MOOD</text>
+  <text x="256" y="292" text-anchor="middle" font-family="'Inter', sans-serif" font-size="22" fill="#F7E8CB" font-weight="500">ALWAYS POSITIVE</text>
+  <path d="M256 168C256 168 282 134 282 104C282 74 256 48 256 48C256 48 230 74 230 104C230 134 256 168 256 168Z" stroke="#C7A56C" stroke-width="6" fill="none"/>
+  <path d="M256 168C256 168 228 132 204 122C180 112 156 120 156 120C156 120 188 150 220 156C244 162 256 168 256 168Z" stroke="#C7A56C" stroke-width="6" fill="none"/>
+  <path d="M256 168C256 168 268 162 292 156C324 150 356 120 356 120C356 120 332 112 308 122C284 132 256 168 256 168Z" stroke="#C7A56C" stroke-width="6" fill="none"/>
+  <text x="256" y="392" text-anchor="middle" font-family="'Inter', sans-serif" font-size="20" fill="#F9F4E8">Chinese-style herbal mix that helps improve mood.</text>
+</svg>
