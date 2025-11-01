@@ -41,6 +41,20 @@ export async function submitOrder(payload: OrderPayload) {
   return { success: true as const };
 }
 
+type RawOrderRow = {
+  id: number;
+  product_id: number;
+  customer_name: string;
+  customer_email: string;
+  customer_phone: string;
+  customer_address: string;
+  quantity: number;
+  total_price: number | string | null;
+  status: OrderStatus | null;
+  created_at: string;
+  ["المنتج"]?: { name: string } | null;
+};
+
 export async function fetchOrders(): Promise<OrderRecord[]> {
   const supabase = createSupabaseServerClient();
   const { data, error } = await supabase
@@ -53,7 +67,13 @@ export async function fetchOrders(): Promise<OrderRecord[]> {
     return [];
   }
 
-  return (data ?? []).map((item) => ({
+  const rows: RawOrderRow[] = Array.isArray(data) ? (data as RawOrderRow[]) : [];
+
+  if (!Array.isArray(data)) {
+    console.error("Unexpected orders payload", data);
+  }
+
+  return rows.map((item) => ({
     id: item.id,
     product_id: item.product_id,
     customer_name: item.customer_name,
